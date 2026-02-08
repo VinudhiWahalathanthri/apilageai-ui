@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -42,7 +42,12 @@
                     <h1 class="text-white mb-4" style="font-size: 3.5rem; font-weight: 700;">Sri Lanka’s #1st Productivity AI Platform</br>
                         for local students</h1>
                     <p class="text-white mb-4" style="font-size: 1.25rem; max-width: 600px;">Meet <b>ApilageAI</b>. The AI that actually understands us. Mindmaps, Flowcharts, and Sinhala/English support built right in.</p>
-
+                    <!-- CTA Button -->
+                    <div class="col-lg-2 col-md-3 col-12 text-center mt-3 mt-md-0">
+                        <button class="btn-get-started">
+                            Get Started <i class="bi bi-arrow-right fs-5"></i>
+                        </button>
+                    </div>
 
                 </div>
             </div>
