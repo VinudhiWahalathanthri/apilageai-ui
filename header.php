@@ -33,6 +33,25 @@
 
         .navbar-custom {
             padding: 1.5rem 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            background-color: transparent;
+        }
+
+        .navbar-custom.scrolled {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Add padding to body to prevent content jump */
+        body {
+            padding-top: 120px;
         }
 
         .nav-link-custom {
@@ -54,6 +73,7 @@
             border-radius: 50px;
             font-weight: 600;
             transition: all 0.3s ease;
+            border:none;
         }
 
         .btn-get-started:hover {
@@ -109,7 +129,7 @@
                 
                 <!-- CTA Button -->
                 <div class="col-lg-2 col-md-3 col-12 text-center mt-3 mt-md-0">
-                    <button class="btn-get-started">
+                    <button class="btn-get-started border-0">
                         Get Started <i class="bi bi-arrow-right fs-5"></i>
                     </button>
                 </div>
@@ -123,6 +143,19 @@
     
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Scroll Animation Script -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar-custom');
+            
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 
 </html>

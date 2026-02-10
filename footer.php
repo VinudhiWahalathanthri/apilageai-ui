@@ -99,11 +99,11 @@
         }
 
         .company-name-bg {
-            font-size:14rem;
+            font-size: 18rem;
             font-weight: 900;
-            margin: 3rem 0 1rem;
+            margin: 3rem 0 -20px;
             user-select: none;
-            background: linear-gradient(135deg, #838383 0%, #e1e1e1 100%);
+            background: linear-gradient(90deg, #838383 0%, #e1e1e1 70%, rgba(225, 225, 225, 0) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -111,6 +111,9 @@
             letter-spacing: -0.05em;
             line-height: 1;
             width: 100%;
+            overflow: hidden;
+            margin-bottom: -50px;
+            white-space: nowrap;
         }
 
         .footer-columns {
@@ -126,7 +129,7 @@
             padding: 1rem 0;
             margin: 0;
             position: absolute;
-            bottom: 50;
+            z-index: 1;
         }
 
         @media (max-width: 1200px) {
@@ -238,6 +241,9 @@
             </div>
 
      
+        </div>
+
+        
             <div class="company-name-bg">
                 APILAGE AI
             </div>
@@ -245,7 +251,6 @@
             <p class="copyright-text">
                 © 2026 Apilage AI. All rights reserved.
             </p>
-        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.14/dist/js/uikit.min.js"></script>
