@@ -223,6 +223,8 @@
 
             <?php include 'api.php'; ?>
 
+           <?php include 'mobileapp.php'; ?>
+
         </div>
         <?php include 'footer.php'; ?>
     </div>
