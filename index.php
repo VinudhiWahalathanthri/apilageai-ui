@@ -177,10 +177,8 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-
-            <!-- <div class="hero-cursor"></div> -->
+    <div>
+        <div>
 
             <div class="col-12 hero-section">
                 <?php include 'header.php'; ?>
@@ -219,49 +217,14 @@
                 </div>
             </div>
 
-            <div class="col-12 bg-white d-flex justify-content-center" style="margin-top:-10px;">
-                <div class="feature-badge" style="margin-top: 150px;">
-                    <img src="assets/icons/diamond.png" width="20" height="20" alt="Diamond Icon">
-                    <span>Advanced Features</span>
-                </div>
-            </div>
 
-            <div class="col-12 text-center content-section">
-                <h1>
-                    More Than Just Chat <br>
-                    We visualized learning
-                </h1>
-                <p>
-                    AI-Powered chatbot that understands context, responds naturally, and helps <br>
-                    teams deliver instant, accurate support – 24/7 without extra effort
-                </p>
-            </div>
 
-            <div class="col-12" style="background-image:url('assets/images/section.png'); background-size: cover; background-position: center;">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="col-12 p-5">
-                            <div class="white-badge">
-                                <img src="assets/icons/diamond-white.png" width="20" height="20" alt="Diamond Icon">
-                                <span>Advanced Features</span>
-                            </div>
+            <?php include 'pricing.php'; ?>
 
-                            </h1>
-                            <h1 class="text-white" style="font-size: 40px; font-weight: 400; font-family: 'Montserrat', sans-serif;">Introducing</br>
-                                <h1 class="text-white mb-4" style="font-size: 64px; font-weight: 600; font-family: 'Montserrat', sans-serif;text-shadow: white;">Apilage-Video</br>
-                                </h1>
-                                <p class="text-white mb-4" style="font-size:16px; max-width: 600px; font-family: 'Montserrat', sans-serif;">Master model can speak Sinhala like a Sri Lankan person and can answer 99.99% Sinhala accurate with complex problems like Maths, Physics, Chemistry, or any other subjects.
-
-                                    It can generate customized videos with examples you want</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <?php include 'api.php'; ?>
 
         </div>
         <?php include 'footer.php'; ?>
-    </div>
     </div>
 
 
